@@ -1,7 +1,3 @@
-document.getElementById("form__tg").addEventListener('submit', function (e) {
-    e.preventDefault();
-});
-
 let tg = window.Telegram.WebApp;
 
 tg.expand()
