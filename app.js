@@ -1,17 +1,3 @@
-document.getElementById("form__tg").addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    let message = `<b>Дані з форми</b>\n`;
-    message += `<b>Прізвище:</b> ${this.lastName.value}\n`;
-    message += `<b>Ім'я:</b> ${this.firstName.value}\n`;
-    message += `<b>По-батькові:</b> ${this.middleName.value}\n`;
-    message += `<b>Код ДРФО:</b> ${this.code.value}\n`;
-    
-    console.log(message)
-
-});
-
-
 let tg = window.Telegram.WebApp;
 
 tg.expand()
