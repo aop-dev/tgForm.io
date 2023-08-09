@@ -15,7 +15,7 @@ const formData = {
         "code": "this.code.value"};
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(formData);
+    tg.sendData("bhkljhkjhkjh");
 });
 
 let usercard = document.getElementsByClassName("form__usercard");
