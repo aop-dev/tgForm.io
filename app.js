@@ -8,12 +8,13 @@ tg.MainButton.color = '#2cab37';
 tg.MainButton.setText("Відправити дані для обробки");
 tg.MainButton.show();
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    const formData = {
+const formData = {
         firstname: document.getElementById("firstName").value,
         lastname: document.getElementById("lastName").value,
         middlename: document.getElementById("middleName").value,
         code: document.getElementById("code.value")};
+
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(JSON.stringify(formData));
 });
 
