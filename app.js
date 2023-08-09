@@ -8,13 +8,12 @@ tg.MainButton.color = '#2cab37';
 tg.MainButton.setText("Відправити дані для обробки");
 tg.MainButton.show();
 
-const formData = {
-        "firstname": this.firstName.value,
-        "lastname": this.lastName.value,
-        "middlename": this.middleName.value,
-        "code": this.code.value};
-
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+    const formData = {
+        firstname: this.firstName.value,
+        lastname: this.lastName.value,
+        middlename: this.middleName.value,
+        code: this.code.value};
     tg.sendData(JSON.stringify(formData));
 });
 
