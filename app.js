@@ -10,7 +10,7 @@ tg.MainButton.show();
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-        const formData = {
+        let formData = {
                 firstname: this.firstName.value,
                 lastname: this.lastName.value,
                 middlename: this.middleName.value,
