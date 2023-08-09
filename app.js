@@ -9,13 +9,7 @@ tg.MainButton.setText("Відправити дані для обробки");
 tg.MainButton.show();
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    const formData = {
-        firstname: this.firstName.value,
-        lastname: this.lastName.value,
-        middlename: this.middleName.value,
-        code: this.code.value 
-    };
-    tg.sendData(formData);
+    tg.sendData('formData');
 });
 
 let usercard = document.getElementsByClassName("form__usercard");
